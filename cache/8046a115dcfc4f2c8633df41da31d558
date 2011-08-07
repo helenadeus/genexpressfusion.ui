@@ -1,0 +1,39 @@
+{
+	"head": {
+		"vars": [ "property" ]
+	}, 
+	"results": {
+		"bindings": [
+			{
+				"property": { "type": "uri", "value": "http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#type" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/dc\/terms\/isReferencedBy" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#modelOrganism" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/id\/platform" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/stat#significance_analysis_software" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/stat#significance_analysis_software_version" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/stat#significance_analysis_test" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/stat#normalization_software" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/id\/studyType" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/rdfs.org\/ns\/void#statItem" }
+			}
+		]
+	}
+}

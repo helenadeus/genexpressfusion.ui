@@ -1,0 +1,45 @@
+{
+	"head": {
+		"vars": [ "property" ]
+	}, 
+	"results": {
+		"bindings": [
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#maintainedBy" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#type" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/rdfs.org\/ns\/void#vocabulary" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/dc\/terms\/title" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/xmlns.com\/foaf\/0.1\/homepage" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/rdfs.org\/ns\/void#exampleResource" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/rdfs.org\/ns\/void#dataDump" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/rdfs.org\/ns\/void#sparqlEndpoint" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/dc\/terms\/license" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/dc\/terms\/subject" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/dc\/terms\/issued" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/rdfs.org\/ns\/void#subset" }
+			}
+		]
+	}
+}

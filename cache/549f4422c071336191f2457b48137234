@@ -1,0 +1,5 @@
+
+{ "head": { "link": [], "vars": ["instance"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "instance": { "type": "uri", "value": "http://xmlns.com/foaf/0.1/name" }},
+    { "instance": { "type": "uri", "value": "http://xmlns.com/foaf/0.1/mbox_sha1sum" }} ] } }

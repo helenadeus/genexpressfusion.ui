@@ -1,0 +1,10 @@
+
+{ "head": { "link": [], "vars": ["property"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "property": { "type": "uri", "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" }},
+    { "property": { "type": "uri", "value": "http://www.openlinksw.com/schemas/virtrdf#qmGraphMap" }},
+    { "property": { "type": "uri", "value": "http://www.openlinksw.com/schemas/virtrdf#qmSubjectMap" }},
+    { "property": { "type": "uri", "value": "http://www.openlinksw.com/schemas/virtrdf#qmPredicateMap" }},
+    { "property": { "type": "uri", "value": "http://www.openlinksw.com/schemas/virtrdf#qmObjectMap" }},
+    { "property": { "type": "uri", "value": "http://www.openlinksw.com/schemas/virtrdf#qmTableName" }},
+    { "property": { "type": "uri", "value": "http://www.openlinksw.com/schemas/virtrdf#qmMatchingFlags" }} ] } }

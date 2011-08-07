@@ -1,0 +1,39 @@
+{
+	"head": {
+		"vars": [ "instance" ]
+	}, 
+	"results": {
+		"bindings": [
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#gene1" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#gene2" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#gene3" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#gene4" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#gene5" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#gene6" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#gene7" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#gene8" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#gene9" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#gene10" }
+			}
+		]
+	}
+}

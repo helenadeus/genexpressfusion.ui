@@ -1,0 +1,53 @@
+{
+  "head": {
+    "vars": [
+      "property"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "property": {
+          "type": "uri",
+          "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      },
+      {
+        "property": {
+          "type": "uri",
+          "value": "http://purl.org/dc/terms/title"
+        }
+      },
+      {
+        "property": {
+          "type": "uri",
+          "value": "http://www.obofoundry.org/ro/ro.owl#part_of"
+        }
+      },
+      {
+        "property": {
+          "type": "uri",
+          "value": "http://www.obofoundry.org/ro/ro.owl#has_participant"
+        }
+      },
+      {
+        "property": {
+          "type": "uri",
+          "value": "http://mged.sourceforge.net/ontologies/MGEDontology.php#has_measurement_type"
+        }
+      },
+      {
+        "property": {
+          "type": "uri",
+          "value": "http://mged.sourceforge.net/ontologies/MGEDontology.php#platform"
+        }
+      },
+      {
+        "property": {
+          "type": "uri",
+          "value": "http://mged.sourceforge.net/ontologies/MGEDontology.php#has_output"
+        }
+      }
+    ]
+  }
+}

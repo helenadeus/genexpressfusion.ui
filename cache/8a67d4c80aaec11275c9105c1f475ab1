@@ -1,0 +1,71 @@
+{
+  "head": {
+    "vars": [
+      "instance"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/bioassay/fetal-ksl-cells-rep-1"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/bioassay/fetal-ksl-cells-rep-2"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/bioassay/fetal-ksl-cells-rep-3"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/bioassay/fetal-ksl-cells-rep-1-0"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/bioassay/fetal-ksl-cells-rep-2-0"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/bioassay/fetal-ksl-cells-rep-3-0"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/bioassay/lt-hsc-lt-hsc-ctl-rep-1"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/bioassay/lt-hsc-lt-hsc-ctl-rep-2"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/bioassay/lt-hsc-lt-hsc-ko-rep-1"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/bioassay/lt-hsc-lt-hsc-ko-rep-2"
+        }
+      }
+    ]
+  }
+}

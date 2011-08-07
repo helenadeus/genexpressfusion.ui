@@ -1,0 +1,13 @@
+
+{ "head": { "link": [], "vars": ["instance"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/virtrdf-data-formats#default-iid" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/virtrdf-data-formats#default-iid-nullable" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/virtrdf-data-formats#default-iid-nonblank" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/virtrdf-data-formats#default-iid-nonblank-nullable" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/virtrdf-data-formats#default" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/virtrdf-data-formats#default-nullable" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/virtrdf-data-formats#sql-varchar" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-nullable" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-dt" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/virtrdf-data-formats#sql-varchar-dt-nullable" }} ] } }

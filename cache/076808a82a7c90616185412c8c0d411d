@@ -1,0 +1,27 @@
+{
+	"head": {
+		"vars": [ "property" ]
+	}, 
+	"results": {
+		"bindings": [
+			{
+				"property": { "type": "uri", "value": "http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#type" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#derives_from_region" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#patients_have_disease" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#histology" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#tissue_state" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/dc\/terms\/hasPart" }
+			}
+		]
+	}
+}

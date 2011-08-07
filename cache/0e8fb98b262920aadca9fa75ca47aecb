@@ -1,0 +1,22 @@
+
+{ "head": { "link": [], "vars": ["property"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "property": { "type": "uri", "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" }},
+    { "property": { "type": "uri", "value": "http://www.w3.org/2002/07/owl#sameAs" }},
+    { "property": { "type": "uri", "value": "http://bio2rdf.org/ns/bio2rdf#html" }},
+    { "property": { "type": "uri", "value": "http://purl.org/dc/elements/1.1/identifier" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/reviewed" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/created" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/modified" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/version" }},
+    { "property": { "type": "uri", "value": "http://www.w3.org/2000/01/rdf-schema#label" }},
+    { "property": { "type": "uri", "value": "http://purl.org/dc/elements/1.1/title" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/mnemonic" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/citation" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/organism" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/encodedBy" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/annotation" }},
+    { "property": { "type": "uri", "value": "http://www.w3.org/2000/01/rdf-schema#seeAlso" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/existence" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/sequence" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/submittedName" }} ] } }

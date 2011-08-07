@@ -1,0 +1,12 @@
+
+{ "head": { "link": [], "vars": ["property"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "property": { "type": "uri", "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" }},
+    { "property": { "type": "uri", "value": "http://www.w3.org/2002/07/owl#sameAs" }},
+    { "property": { "type": "uri", "value": "http://purl.org/dc/elements/1.1/identifier" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/title" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/author" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/date" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/name" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/volume" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/pages" }} ] } }

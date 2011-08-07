@@ -1,0 +1,18 @@
+{
+	"head": {
+		"vars": [ "instance" ]
+	}, 
+	"results": {
+		"bindings": [
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#microarrayGenelists" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/www4.wiwiss.fu-berlin.de\/diseasome" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/hcls.deri.org\/sparql" }
+			}
+		]
+	}
+}

@@ -1,0 +1,13 @@
+
+{ "head": { "link": [], "vars": ["instance"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/kegg:tan:TA08425" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/interpro:IPR007480" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/pfam:PF04385" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/pir:A44945" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/refseq:XP_764072.1" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/geneid:3500484" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/kegg:tpv:TP04_0437" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/pir:S26409" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/unigene:Les.3896" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/interpro:IPR003612" }} ] } }

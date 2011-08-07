@@ -1,0 +1,13 @@
+
+{ "head": { "link": [], "vars": ["instance"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/precision" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/amountOfTotalPurchaseConsiderationPaidByMeansOfCashAndCashEquivalentsValue" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/decimals" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/balance" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/periodType" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/changesInTranslationReservesPresentationValue" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/increaseDecreaseInLoansAndReceivablesNetValue" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/receiptsFromInterestIncomeAndOtherSimilarReceiptsValue" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/capitalReductionCapitalRedemptionReservesValue" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/issuanceOfPreferenceSharesShareCapitalPreferenceSharesValue" }} ] } }

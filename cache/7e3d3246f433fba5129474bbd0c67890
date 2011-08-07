@@ -1,0 +1,13 @@
+
+{ "head": { "link": [], "vars": ["instance"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/isoforms:P15455-2" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/isoforms:P48347-2" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/isoforms:P48348-2" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/isoforms:P68250-2" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/isoforms:P31946-2" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/isoforms:Q9P0K1-3" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/isoforms:Q13627-2" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/isoforms:Q4R572-2" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/isoforms:Q9CQV8-2" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/isoforms:A4K2U9-2" }} ] } }

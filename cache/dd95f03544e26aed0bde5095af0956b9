@@ -1,0 +1,8 @@
+
+{ "head": { "link": [], "vars": ["property"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "property": { "type": "uri", "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" }},
+    { "property": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/order" }},
+    { "property": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/to" }},
+    { "property": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/from" }},
+    { "property": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/role" }} ] } }

@@ -1,0 +1,13 @@
+
+{ "head": { "link": [], "vars": ["instance"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/uniprot:P13744_47" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/uniprot:P13744_4D" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/uniprot:P13744_51" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/uniprot:P13744_59" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/uniprot:P13744_5D" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/uniprot:Q8GBW6_22" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/uniprot:Q8GBW6_2A" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/uniprot:Q8GBW6_32" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/uniprot:Q8GBW6_3E" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/uniprot:Q8GBW6_6E" }} ] } }

@@ -1,0 +1,8 @@
+
+{ "head": { "link": [], "vars": ["property"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "property": { "type": "uri", "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/range" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/method" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/measuredValue" }},
+    { "property": { "type": "uri", "value": "http://purl.uniprot.org/core/measuredError" }} ] } }

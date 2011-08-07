@@ -1,0 +1,13 @@
+
+{ "head": { "link": [], "vars": ["instance"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/affymetrix:11986_at" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/affymetrix:11987_at" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/affymetrix:11988_at" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/affymetrix:11989_at" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/affymetrix:11990_at" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/affymetrix:11991_g_at" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/affymetrix:11992_at" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/affymetrix:11993_at" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/affymetrix:11994_at" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/affymetrix:11995_at" }} ] } }

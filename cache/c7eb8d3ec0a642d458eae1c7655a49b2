@@ -1,0 +1,39 @@
+{
+	"head": {
+		"vars": [ "instance" ]
+	}, 
+	"results": {
+		"bindings": [
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#sample_list1" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#sample_list2" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#sample_list3" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#sample_list4" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#sample_list5" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#sample_list6" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#sample_list7" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#sample_list8" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#sample_list9" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#sample_list10" }
+			}
+		]
+	}
+}

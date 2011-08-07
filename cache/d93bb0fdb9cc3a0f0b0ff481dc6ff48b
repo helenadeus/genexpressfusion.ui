@@ -1,0 +1,13 @@
+
+{ "head": { "link": [], "vars": ["instance"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Label_link--OperatingExpensesTotalByFunction_to_ifrs-gp_OperatingExpensesTotalByFunction_lbl--en" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Label_link--ClassesOfIntangibleAssetsGrossPresentation_to_ifrs-gp_ClassesOfIntangibleAssetsGrossPresentation_lbl--en" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Label_link--AcquisitionsThroughBusinessCombinationsWarrantyProvision_to_ifrs-gp_AcquisitionsThroughBusinessCombinationsWarrantyProvision_lbl--en" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Label_link--DetailOfBiologicalAssetsPledgedAsSecurity_to_ifrs-gp_DetailOfBiologicalAssetsPledgedAsSecurity_lbl--en" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Label_link--DetailOfExposureToContractualMaturitiesByClassOfLiabilityByMaturityGroupings_to_ifrs-gp_DetailOfExposureToContractualMaturitiesByClassOfLiabilityByMaturityGroupings_lbl--en" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Label_link--CodeOfDeferredExpenditureNonCurrent_to_ifrs-gp_CodeOfDeferredExpenditureNonCurrent_lbl--en" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Label_link--NatureAndExtentOfObligationsToProvideOrRightsToExpectProvisionOfServicesUnderServiceConcessionArrangement_to_ifrs-gp_NatureAndExtentOfObligationsToProvideOrRightsToExpectProvisionOfServicesUnderServiceConcessionArrangement_lbl--en" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Label_link--DescriptionOfDividendPaidPreferenceShares_to_ifrs-gp_DescriptionOfDividendPaidPreferenceShares_lbl--en" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Label_link--MiscellaneousOtherRevenueByNature_to_ifrs-gp_MiscellaneousOtherRevenueByNature_lbl--en" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Label_link--ForeignCurrencyExchangeIncreaseDecreaseITEquipment_to_ifrs-gp_ForeignCurrencyExchangeIncreaseDecreaseITEquipment_lbl--en" }} ] } }

@@ -1,0 +1,29 @@
+{
+  "head": {
+    "vars": [
+      "property"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "property": {
+          "type": "uri",
+          "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        }
+      },
+      {
+        "property": {
+          "type": "uri",
+          "value": "http://purl.org/dc/terms/title"
+        }
+      },
+      {
+        "property": {
+          "type": "uri",
+          "value": "http://purl.obolibrary.org/obo/OBI_0000298"
+        }
+      }
+    ]
+  }
+}

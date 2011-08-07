@@ -1,0 +1,13 @@
+
+{ "head": { "link": [], "vars": ["instance"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "instance": { "type": "bnode", "value": "nodeID://b10000" }},
+    { "instance": { "type": "bnode", "value": "nodeID://b10001" }},
+    { "instance": { "type": "bnode", "value": "nodeID://b10002" }},
+    { "instance": { "type": "bnode", "value": "nodeID://b10003" }},
+    { "instance": { "type": "bnode", "value": "nodeID://b10004" }},
+    { "instance": { "type": "bnode", "value": "nodeID://b10005" }},
+    { "instance": { "type": "bnode", "value": "nodeID://b10006" }},
+    { "instance": { "type": "bnode", "value": "nodeID://b10007" }},
+    { "instance": { "type": "bnode", "value": "nodeID://b10008" }},
+    { "instance": { "type": "bnode", "value": "nodeID://b10009" }} ] } }

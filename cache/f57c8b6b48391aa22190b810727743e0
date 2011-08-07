@@ -1,0 +1,13 @@
+
+{ "head": { "link": [], "vars": ["instance"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/AmountOfTotalPurchaseConsiderationPaidByMeansOfCashAndCashEquivalents" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/IFRS_GP_Item" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ChangesInTranslationReservesPresentation" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/IncreaseDecreaseInLoansAndReceivablesNet" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ReceiptsFromInterestIncomeAndOtherSimilarReceipts" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/CapitalReductionCapitalRedemptionReserves" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/IssuanceOfPreferenceSharesShareCapitalPreferenceShares" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/DescriptionOfCurrency" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ReclassificationOfFinancialInstrumentsFromEquityToLiabilitySharePremiumOrdinaryShares" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/DeferredTaxAssetsUnrecognised" }} ] } }

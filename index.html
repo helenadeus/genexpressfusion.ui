@@ -1,0 +1,296 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Extract Classes and Properties from SPARQL endpoints</title> 
+	<script type="text/javascript" src="jquery.mobile/jquery-1.6.1.min.js"></script>
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.0b1.css" />
+	
+	<script type="text/javascript" src="jquery.mobile/jquery.mobile-1.0b1.js"></script>
+<script type="text/javascript" src="extract_semantics.js">
+
+</script>
+
+
+</head> 
+
+<body>
+<div data-role="page" id="#main">
+
+	<div data-role="header" data-theme="a">
+		<h1>One Semantic Web API for Gene Expression</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<br /><br />
+		This project uses SPARQL 1.1 to investigate multiple gene expression data sources. We have included the following data sources: 
+		
+		<a href="http://www.ebi.ac.uk/gxa/" target="_blank">Gene Expression Atlas</a>;<a href="http://purl.org/net/biordfmicroarray/demo" target="_blank">W3C BioRDF provenance of microarray experiments</a>; <a href="http://bloodprogram.hsci.harvard.edu" target="_blank">Blood Genomics</a>
+		
+		
+		Each data source has been available through a SPARQL endpoint. To achieve data integration, query templating is used by resorting to SPARQL CONSTRUCT and SPARQL SERVICE. <br /><br /> 1) Integration of data from multiple SPARQL endpoints <br /> 2) Mapping of queries across SPARQL endpooints with different data schemas. 
+
+		<br />
+		<center><img src="architectureContructService.png" width="600px" height="400px"></center>
+		
+		<br /><br /><ul data-role="listview" data-theme="a" data-inset="true">
+			<li><a href="#demo"><h3>SPARQL endpoint</h3></a></li>
+			<li><a href="#constructs"><h3>Build new SPARQL templates</h3></a></li>
+			<li><a href="http://code.google.com/p/genexpressfusion/" rel="external"><h3>Download mappings</h3></a></li>
+			<li><a href="#sparql_engines" rel="external"><h3>Engines implementing SPARQL 1.1</h3></a></li>
+			<li><a href="http://www.w3.org/TR/sparql11-query/" rel="external"><h3>Help with SPARQL 1.1</h3></a></li>
+			
+		</ul>
+	<br /><br />
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="a"> 
+		<h4> </h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="constructs">
+
+	<div data-role="header">
+		<a href="#main" data-icon="home">Home</a>
+		<h1>Mapping Gene Expressions SPARQL endpoints</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>Select your SPARQL endpoints and start Linking!</p>	
+		<div data-role="collapsible" data-collapsed="false" data-theme="a" style="" id="sparql">
+			<h3>Choose SPARQL endpoints</h3>
+				<div data-role="fieldcontain" data-theme="a" >
+					<label for="sparql1">SPARQL endpoint #1</label>
+					<input type="text" id="sparql1" name="sparql1" class="sparql" value="http://www.ebi.ac.uk/microarray-srv/openrdf-sesame/repositories/gxa"  />
+					<span id="templating" style="color:red;size:x-small">*template</span>
+					<br />
+					<label for="sparql2">SPARQL endpoint #2</label>
+					<input type="text" id="sparql2" name="sparql2" class="sparql" value="http://hcls.deri.org:8080/openrdf-sesame/repositories/biordfmicroarray"  /><br />
+					<label for="sparql3">SPARQL endpoint #3</label>
+					<input type="text" id="sparql3" name="sparql2" value="http://bloodprogram.hsci.harvard.edu/sparql" class="sparql" /><br />
+					<!-- <label for="text"></label><a href="" onClick="moreSPARQL()">Add more</a> -->
+					<br /><br />
+					<input type="button" onClick="getClasses()" value="Get Types">
+					
+				</div>
+				
+			</div>
+			<br />
+			<div data-role="collapsible" data-collapsed="false" data-theme="a" style="display:none" id="link">
+			<h3>Next step...Choose and match classes and properties</h3>
+				<div id="sparql_types" class="ui-grid-a">
+				
+					<div class="ui-block-a">
+					<h2>Types</h2>
+						<div data-role="fieldcontain" data-theme="a" id="sparql_types">
+						
+							<label for="sparql1_types" class="select">Endpoint #1</label>
+							<select data-role="select" id="sparql1_types" class="sparql_types">
+								
+							</select>
+						
+							<label for="sparql2_types" class="select">Endpoint #2</label>
+							<select data-role="select" id="sparql2_types" class="sparql_types">
+								
+							</select>
+						
+							<label for="sparql3_types" class="select">Endpoint #3</label>
+							<select data-role="select" id="sparql3_types" class="sparql_types">
+								
+							</select>
+						
+						</div>
+					
+						<label for="nameVar">What would you call this variable?</label>
+						<input type="text" value="classname" id="nameVar"><span id="varError" style="color:red"></span>
+						<input type="button" value="Match these types" onClick="matchClasses()">
+					
+					</div>
+					<div class="ui-block-b">
+					<h2>Properties</h2>
+						<div data-role="fieldcontain" data-theme="a" id="sparql_properties">
+						
+							<label for="sparql1_props" class="select">Endpoint #1</label>
+							<select data-role="select" id="sparql1_props" class="sparql_props">
+								
+							</select>
+							
+							<label for="sparql2_props" class="select">Endpoint #2</label>
+							<select data-role="select" id="sparql2_props" class="sparql_props">
+								
+							</select>
+							
+							<label for="sparql3_props" class="select">Endpoint #3</label>
+							<select data-role="select" id="sparql3_props" class="sparql_props">
+								
+							</select>
+						
+						</div>
+					
+						<label for="nameVar">What would you call this variable?</label>
+						<input type="text" value="propertyname" id="nameProp"><span id="varPropError" style="color:red"></span>
+						<input type="button" value="Match these properties" onClick="matchProperties()">
+						
+					</div>
+					
+				
+				</div>
+			
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="false" data-theme="a" style="display:none" id="construct">
+			<h3>Use these constructs for your SPARQL query:</h3>
+			<label for="construct2" id="constructLabel2">Construct for endpoint #2</label>
+			<textarea id="construct2" style="height: 90px"></textarea>
+			<label for="construct3" id="constructLabel3">Construct for endpoint #3</label>
+			<textarea id="construct3"  style="height: 90px"></textarea>
+			</div>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4></h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="demo">
+
+	<div data-role="header">
+		<a href="#main" data-icon="home">Home</a>
+		
+		<h1>Demo - Querying gene expression SPARQL endpoints</h1>
+		
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		Included in this project are 3 different SPARQL endpoint with gene expression data and its experimental context. Each endpoint uses a different representation of the data, including different ontologies. Making use of SPARQL constructs, we have assembled a set of queries that can be performed equally on the three endpoints.
+
+		<!-- <h3>Choose the SPARQL endpoints to be included in the query</h3>
+		<div data-role="fieldcontain">
+			<fieldset data-role="controlgroup" data-type="horizontal">
+				<legend></legend>
+					<input type="checkbox" name="s1" id="s1" value="http://www.ebi.ac.uk/microarray-srv/openrdf-sesame/repositories/gxa" checked="checked" />
+					<label for="s1">GXA</label>
+					<input type="checkbox" name="s2" id="s2" value="http://hcls.deri.org:8080/openrdf-sesame/repositories/biordfmicroarray" checked="checked" />
+					<label for="s2">BioRDF</label>
+					<input type="checkbox" name="s3" id="s3" value="http://bloodprogram.hsci.harvard.edu/sparql" checked="checked" />
+					<label for="s3">HSCI Blood Genomics</label>
+			</fieldset>
+		</div> -->
+		<h3>Choose the query</h3>
+		<div data-role="fieldcontain">
+			<form method="POST" id="formaction" action="http://vmdhcls04.deri.ie:8080/exp" target="_blank">
+			<label for="queries" class="select">Example Queries</label>
+			<select id="queries" name="queries" data-native-menu="true">
+				<option value="">(Select a query)</option>
+				<option value="q1">Unified gene query</option>
+				<option value="q2">Unified experiments query</option>
+				<option value="q3">List experiments and model organism</option>
+				<option value="q4">Find experiment in "homo sapiens"</option>
+				<option value="q5">Find differentially expressed genes in experiment E-CBIL-22 (GXA) </option>
+				<!-- <option value="q7">Find all "UP" regulated genes in experiment E-CBIL-22 and experiment1 (BioRDF)</option> -->
+				<option value="q8">Find experiments where gene ENSMUSG00000037916 is "UP"</option>
+				<option value="q6">Convert entrez gene IDs to ensembl ID</option>
+				<option value="q7">Find the gene ontology function and chromossomal location of genes</option>
+			</select>
+			<label for="prefixes" class="textarea" >Prefixes</label><textarea name="prefixes" id="prefixes" style="height: 100px"></textarea>
+			<label for="assembledQuery"></label><textarea name="assembledQuery" id="assembledQuery" style="height: 200px"></textarea>
+			<label for="media">What should be the format of the output?</label>
+			<select id="media" name="media">
+				<option value="html">HTML</option>
+				<option value="xmlres">SPARQL XML</option>
+				<option value="tablesorter">HTML Sortable Table</option>
+				<option value="textplain">Plain text</option>
+			</select>
+			
+			<input type="hidden" id="query" name="query">
+			
+			<input type="submit" value="Execute Query">
+			<a href="#maps" data-role="button">View Transformations</a>
+			</form>
+		</div>
+
+		
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4> </h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="maps">
+
+	<div data-role="header">
+		<a href="#main" data-icon="home">Home</a>
+		<a href="#demo" data-rel="back" data-role="button" data-icon="back">Back</a>
+		<h1>Query Transformations</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h3>Endpoint #1: <a href="http://www.ebi.ac.uk/microarray-srv/openrdf-sesame/repositories/gxa" rel="external">GXA</a>  
+		 (http://www.ebi.ac.uk/microarray-srv/openrdf-sesame/repositories/gxa)</h3>
+		<label for="endpointConstructs1" class="textarea"></label><textarea name="map_gxa" id="map_gxa" style="height: 200px; width:900px"></textarea>
+
+		<h3>Endpoint #2: <a href="http://hcls.deri.org:8080/openrdf-sesame/repositories/biordfmicroarray" rel="external">BioRDF</a> (http://hcls.deri.org:8080/openrdf-sesame/repositories/biordfmicroarray)</h3>
+		<label for="endpointConstructs2" class="textarea"></label><textarea name="map_biordf" id="map_biordf" style="height: 200px; width:900px"></textarea>
+		<h3>Endpoint #3: <a href="http://bloodprogram.hsci.harvard.edu/sparql" rel="external">Blood genomics</a> (http://bloodprogram.hsci.harvard.edu/sparql)</h3>
+		<label for="endpointConstructs3" class="textarea"></label><textarea name="map_blood" id="map_blood" style="height: 200px; width:900px"></textarea>
+
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4> </h4>
+	</div>
+</div>
+<div data-role="page" id="about">
+
+	<div data-role="header">
+		<a href="#main" data-icon="home">Home</a>
+		<h1>About this project</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		blah
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4> </h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="sparql_engines">
+
+	<div data-role="header">
+		<a href="#main" data-icon="home">Home</a>
+		<h1>SPARQL 1.1. Implementations</h1>
+	</div>
+
+	<div data-role="content">	
+			<ul data-role="listview">
+				<li><a href="http://www.openjena.org/wiki/Fuseki" rel="external">
+					<h3>Fuseki</h3>
+					<p>Jena</p>
+				</a></li>
+				<li><a href="http://jena.sourceforge.net/ARQ/" rel="external">
+					<h3>ARQ</h3>
+					<p>Jena</p>
+				</a></li>
+				<li><a href="http://sourceforge.net/projects/swobjects/" rel="external">
+					<h3>SWobjects</h3>
+					<p>Stand-alone SPARQL engine</p>
+				</a></li>
+				<li><a href="http://www.dotnetrdf.org/content.asp?pageID=rdfConvert" rel="external">
+				<h3>rdfConvert</h3>
+					<p>Stand-alone SPARQL engine (dotNet)</p>
+				</a></li>
+
+			</ul>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div><!-- /page -->
+</body>
+</html>

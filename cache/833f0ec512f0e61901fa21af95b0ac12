@@ -1,0 +1,5 @@
+
+{ "head": { "link": [], "vars": ["instance"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/virtrdf#DefaultQuadMap" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/virtrdf#DefaultServiceMap" }} ] } }

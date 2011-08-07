@@ -1,0 +1,13 @@
+
+{ "head": { "link": [], "vars": ["instance"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Presentation_ExplanatoryDisclosures--MovementsInPropertyPlantAndEquipmentPresentation_to_MovementsInFixturesAndFittingsNet" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Presentation_BalanceSheetClassified--LiabilitiesCurrentPresentation_to_OtherLiabilitiesCurrent" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Presentation_ExplanatoryDisclosures--DetailOfNonCurrentAssetsAndDisposalGroupsHeldForSaleClassifiedAsHeldForSaleOrSold_to_NonCurrentAssetOrDisposalGroupHeldForSaleClassifiedAsHeldForSaleOrSold" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Presentation_CashFlowIndirectFinancialInstitutions--IncreaseDecreaseInOperatingLiabilitiesExcludingCashAndCashEquivalentsPresentation_to_IncreaseDecreaseInDebenturesAndDebtCertificates" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Presentation_ExplanatoryDisclosures--ClassOfOrdinaryShareCapital_to_OrdinarySharesReservedForIssuanceUnderOptionsAndSalesContracts" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Presentation_ExplanatoryDisclosures--CreditRiskDisclosures_to_DetailOfCollateralAndOtherCreditEnhancementsPledgedAsSecurityRelatingToFinancialAssetsPastDueButNotImpaired" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Presentation_Equity--ChangesInReservesForGeneralBankingRisksPresentation_to_TransfersToFromRetainedEarningsReservesForGeneralBankingRisks" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Presentation_AccountingPolicies--DepreciationMethodsForPropertyPlantAndEquipment_to_DepreciationMethodForLeaseholdImprovements" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Presentation_ExplanatoryDisclosures--AmountOfTotalAssetsOfSubsidiary_to_AmountOfNonCurrentAssetsOfSubsidiary" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Presentation_AccountingPolicies--FinancialImpactOfDepartureFromIFRS_to_FinancialImpactOfDepartureOnAssets" }} ] } }

@@ -1,0 +1,71 @@
+{
+  "head": {
+    "vars": [
+      "instance"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/users/admin"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/users/jiayun-lu"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/users/siavash"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/users/andrei-krivtsov"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/users/li-chai"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/users/scott-armstrong"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/users/min-ye"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/users/pu-zhang"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/users/elena-levantini"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/users/florence-guibal"
+        }
+      }
+    ]
+  }
+}

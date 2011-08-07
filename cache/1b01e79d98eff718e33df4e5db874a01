@@ -1,0 +1,18 @@
+{
+	"head": {
+		"vars": [ "property" ]
+	}, 
+	"results": {
+		"bindings": [
+			{
+				"property": { "type": "uri", "value": "http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#type" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#value" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/stat#p_value" }
+			}
+		]
+	}
+}

@@ -1,0 +1,13 @@
+
+{ "head": { "link": [], "vars": ["instance"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/citations:15994557" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/citations:1689460" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/citations:15994558" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/citations:8310077" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/citations:2103443" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/citations:2325202" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/citations:11831707" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/citations:2444886" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/citations:10606554" }},
+    { "instance": { "type": "uri", "value": "http://bio2rdf.org/citations:2469623" }} ] } }

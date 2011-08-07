@@ -1,0 +1,39 @@
+{
+	"head": {
+		"vars": [ "instance" ]
+	}, 
+	"results": {
+		"bindings": [
+			{
+				"instance": { "type": "uri", "value": "http:\/\/www.ensembl.org\/Gene\/Summary?g=ENSMUSG00000033060" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/www.ensembl.org\/Gene\/Summary?g=ENSMUSG00000024360" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/www.ensembl.org\/Gene\/Summary?g=ENSMUSG00000001018" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/www.ensembl.org\/Gene\/Summary?g=ENSMUSG00000025204" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/www.ensembl.org\/Gene\/Summary?g=ENSMUSG00000033174" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/www.ensembl.org\/Gene\/Summary?g=ENSMUSG00000025892" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/www.ensembl.org\/Gene\/Summary?g=ENSMUSG00000038418" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/www.ensembl.org\/Gene\/Summary?g=ENSMUSG00000067847" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/www.ensembl.org\/Gene\/Summary?g=ENSMUSG00000021518" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/www.ensembl.org\/Gene\/Summary?g=ENSMUSG00000001017" }
+			}
+		]
+	}
+}

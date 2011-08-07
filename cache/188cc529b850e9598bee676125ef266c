@@ -1,0 +1,71 @@
+{
+  "head": {
+    "vars": [
+      "instance"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/biomaterial/fetal-ksl-cells-wild-type"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/biomaterial/fetal-ksl-cells-cebpa-knockout"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/biomaterial/lt-hsc-wild-type"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/biomaterial/lt-hsc-cebpa-knockout"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/biomaterial/st-hsc-wild-type"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/biomaterial/st-hsc-cebpa-knockout"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/biomaterial/mac1c-kit-progenitors-wild-type"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/biomaterial/mac1c-kit-progenitors-acute-myeloid-leukemia"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/biomaterial/sorted-cells-wt"
+        }
+      },
+      {
+        "instance": {
+          "type": "uri",
+          "value": "http://bloodprogram.hsci.harvard.edu/biomaterial/sorted-cells-ko"
+        }
+      }
+    ]
+  }
+}

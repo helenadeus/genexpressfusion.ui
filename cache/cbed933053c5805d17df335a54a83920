@@ -1,0 +1,27 @@
+{
+	"head": {
+		"vars": [ "property" ]
+	}, 
+	"results": {
+		"bindings": [
+			{
+				"property": { "type": "uri", "value": "http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#type" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/www.w3.org\/2000\/01\/rdf-schema#label" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#probe_set_id" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#name" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#ID" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#expressed_in" }
+			}
+		]
+	}
+}

@@ -1,0 +1,11 @@
+
+{ "head": { "link": [], "vars": ["instance"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/virtrdf#DefaultQuadMap-G-cols" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/virtrdf#DefaultQuadMap-S-cols" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/virtrdf#DefaultQuadMap-P-cols" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/virtrdf#DefaultQuadMap-O-cols" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/virtrdf#DefaultServiceMap-G-cols" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/virtrdf#DefaultServiceMap-S-cols" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/virtrdf#DefaultServiceMap-P-cols" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/virtrdf#DefaultServiceMap-O-cols" }} ] } }

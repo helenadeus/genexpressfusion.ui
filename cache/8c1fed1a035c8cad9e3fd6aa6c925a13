@@ -1,0 +1,18 @@
+{
+	"head": {
+		"vars": [ "instance" ]
+	}, 
+	"results": {
+		"bindings": [
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#microarray_experiment1" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#microarray_experiment2" }
+			}, 
+			{
+				"instance": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#microarray_experiment3" }
+			}
+		]
+	}
+}

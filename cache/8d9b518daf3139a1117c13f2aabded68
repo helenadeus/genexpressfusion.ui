@@ -1,0 +1,13 @@
+
+{ "head": { "link": [], "vars": ["instance"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Calculation_NetGross--IntangibleAssetsNet_to_AccumulatedAmortisationAndImpairmentIntangibleAssetsTotal" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Calculation_CashFlowIndirect--NonCashAdjustmentsTotal_to_IncreaseDecreaseInDeferredItems" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Calculation_ClassesFinancialInstitutions--InterestIncomeFinancialAssetsNotMeasuredAtFairValueThroughProfitOrLossTotal_to_InterestIncomeLoansAndReceivables" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Calculation_Equity--ChangesInEquityTotal_to_AvailableForSaleReserveTransferredToIncomeTotal" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Calculation_CurrentNonCurrent--AllowancesForTradeAndOtherReceivablesCurrent_to_AccumulatedAllowanceForUncollectibleMinimumLeasePaymentsReceivableCurrent" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Calculation_ExplanatoryDisclosures--MinimumLeasePaymentsPayableGrossFinanceLeaseObligationsTotal_to_MinimumLeasePaymentsPayableOverFiveYearsGrossFinanceLeaseObligationsTotal" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Calculation_EquityLines--PriorPeriodErrorsAffectingEquityTotal_to_PriorPeriodErrorsAffectingEquityCumulativeIncomeExpenseRelatingToNonCurrentAssetsAndDisposalGroupsHeldForSale" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Calculation_CashFlowIndirect--AdjustmentsToReconcileToProfitLossFromOperationsTotal_to_IncomeTaxExpenseIncome" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Calculation_Equity--ChangesInProposedDividendReservesTotal_to_EquityIncreaseDecreaseResultingFromBusinessCombinationProposedDividendReserves" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Calculation_ExplanatoryDisclosures--DeferredTaxExpenseNetTotal_to_DeferredTaxExpenseArisingFromWriteDownOrReversalOfWriteDownOfDeferredTaxAssetDuringAssessmentOfUsability" }} ] } }

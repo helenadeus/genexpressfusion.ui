@@ -1,0 +1,30 @@
+{
+	"head": {
+		"vars": [ "property" ]
+	}, 
+	"results": {
+		"bindings": [
+			{
+				"property": { "type": "uri", "value": "http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#type" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#principal_investigator" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#pubmed_link" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/magetab-om.sourceforge.net\/authorlist" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/magetab-om.sourceforge.net\/title" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#raw_data_url" }
+			}, 
+			{
+				"property": { "type": "uri", "value": "http:\/\/purl.org\/net\/biordfmicroarray\/ns#experiment_laboratory" }
+			}
+		]
+	}
+}

@@ -1,0 +1,13 @@
+
+{ "head": { "link": [], "vars": ["instance"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/ClassOfFinancialLiability" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/descriptionOfClassOfFinancialLiability" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/FinancialAssetWherePresumptionThatFairValueCanBeReliablyMeasuredHasBeenOvercome" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/descriptionOfFinancialAssetWherePresumptionThatFairValueCanBeReliablyMeasuredHasBeenOvercome" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/carryingAmountOfFinancialAssetWherePresumptionThatFairValueCanBeReliablyMeasuredHasBeenOvercome" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/rangeOfEstimatesWithinWhichFairValueIsHighlyLikelyToLieWherePresumptionThatFairValueCanBeReliablyMeasuredHasBeenOvercome" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/explanationOfWhyFairValueCannotBeReliablyMeasuredWherePresumptionThatFairValueCanBeReliablyMeasuredHasBeenOvercome" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/UnusualAndInfrequentItemOfIncomeExpense" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/amountOfUnusualAndInfrequentItemOfIncomeExpense" }},
+    { "instance": { "type": "uri", "value": "http://www.openlinksw.com/schemas/xbrl/descriptionOfUnusualAndInfrequentItemOfIncomeExpense" }} ] } }
