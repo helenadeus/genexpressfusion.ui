@@ -116,10 +116,10 @@ $(document).ready(
 				$('#prefixes').val(p);
 				$('#assembledQuery').val(q);
 				$('#query').val(p+q);
-				
+				$('#execute_query').unbind('click');
 				$('#execute_query').click(						
 					function () {
-						window.location="http://genexpressfusion.googlecode.com/hg/"+seld+".html";			
+						window.open("http://genexpressfusion.googlecode.com/hg/"+seld+".html");			
 					}			
 									
 				) 
