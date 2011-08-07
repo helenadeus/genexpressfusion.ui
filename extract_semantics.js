@@ -33,9 +33,10 @@ $(document).ready(
 				var seld = $('#'+$(this).attr('id')+' option:selected').val();
 				switch (seld) {
 					case 'q1':
-					$('#formaction').attr("action", "http://vmdhcls04.deri.ie:8080/exp");	
+					
+					
 					var p = "PREFIX gene: <http://www.ebi.ac.uk/efo/EFO_0002606>\nPREFIX affy: <http://bio2rdf.org/ns/affymetrix#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n";	
-					var q = "SELECT ?gene \nWHERE {	\n?gene        a         gene: .\n} limit 100";
+					var q = "SELECT ?gene \nWHERE {	\n?gene        a         gene: .\n}";
 					
 					$('#map_gxa').html("PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX gene: <http://www.ebi.ac.uk/efo/EFO_0002606>\nPREFIX affy: <http://bio2rdf.org/ns/affymetrix#>\nPREFIX fn: <http://www.w3.org/2005/xpath-functions#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nCONSTRUCT { ?gene  a gene: .}\nWHERE {\n?geneL  a gene: .\n\tBIND(IRI(fn:concat('http://bio2rdf.org/ensembl:', (fn:substring(xsd:string(?geneL), 39)))) as ?gene)\n}");
 					
@@ -44,9 +45,9 @@ $(document).ready(
 
 					break;
 					case 'q2':
-						$('#formaction').attr("action", "http://vmdhcls04.deri.ie:8080/exp");	
+						//$('#formaction').attr("action", "http://genexpressfusion.googlecode.com/hg/q2.html");	
 						var p = 'PREFIX experiment: <http://www.ebi.ac.uk/efo/EFO_0004033>\nPREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n';
-						var q = 'SELECT * \WHERE {\n	\?experiment        rdf:type         experiment: .\n} limit 100';
+						var q = 'SELECT * \WHERE {\n	\?experiment        rdf:type         experiment: .\n}';
 						
 						$('#map_gxa').html("PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX experiment: <http://www.ebi.ac.uk/efo/EFO_0004033>\nCONSTRUCT { ?experiment a experiment: .}\nWHERE {\n?experiment	a	<http://purl.org/net/biordfmicroarray/ns#microarray_experiment> .\n}");
 						$('#map_biordf').html('PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX experiment: <http://www.ebi.ac.uk/efo/EFO_0004033>\nCONSTRUCT { ?experiment a experiment: .}\nWHERE {\n?experiment	a	<http://www.ebi.ac.uk/efo/EFO_0004033> .\n}');
@@ -54,7 +55,7 @@ $(document).ready(
 						break;
 					
 					case 'q3':
-						$('#formaction').attr("action", "http://vmdhcls04.deri.ie:8080/exp");	
+						//$('#formaction').attr("action", "http://genexpressfusion.googlecode.com/hg/q3.html");	
 						var p = 'PREFIX experiment: <http://www.ebi.ac.uk/efo/EFO_0004033>\nPREFIX modelOrganism: <http://purl.obolibrary.org/obo/OBI_0100026>\nPREFIX platform: <http://purl.obolibrary.org/obo/OBI_0000052>\nPREFIX result: <http://purl.obolibrary.org/obo/IAO_0000136>\nPREFIX platform: <http://purl.obolibrary.org/obo/OBI_0000052>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>';
 						var q = 'SELECT * where { \n?experiment a experiment: ;\n	modelOrganism: ?modelOrganism .\n OPTIONAL {  ?experiment rdfs:label ?experimentName }\nOPTIONAL {  ?experiment result: ?resultSet }\nOPTIONAL {  ?experiment platform: ?platform }\n}';
 
@@ -64,43 +65,45 @@ $(document).ready(
 						$('#map_blood').html("PREFIX experiment: <http://www.ebi.ac.uk/efo/EFO_0004033>\nPREFIX modelOrganism: <http://purl.obolibrary.org/obo/OBI_0100026>\nCONSTRUCT {\n ?experiment a experiment: .\n?experiment 	rdfs:label ?experimentName .\n?experiment		modelOrganism: ?modelOrganism .\n?experiment		platform: ?platform .\n}\nWHERE \n{?experiment        a          <http://mged.sourceforge.net/ontologies/MGEDontology.php#BioAssay> ;\n			<http://purl.org/dc/terms/title>	?experimentName ;\n			mged:platform	?platform ;\n			<http://www.obofoundry.org/ro/ro.owl#has_participant> ?sample .\n	?sample	<http://purl.obolibrary.org/obo/OBI_0000298> ?modelOrganismTaxon .\n  ?modelOrganismTaxon rdfs:label ?modelOrganism .\n}");
 						
 					break;
-					case 'q4':
-						$('#formaction').attr("action", "http://vmdhcls04.deri.ie:8080/exp");	
-						var p = 'PREFIX experiment: <http://www.ebi.ac.uk/efo/EFO_0004033>\nPREFIX modelOrganism: <http://purl.obolibrary.org/obo/OBI_0100026>\nPREFIX result: <http://purl.obolibrary.org/obo/IAO_0000136>\nPREFIX gene: <http://www.ebi.ac.uk/efo/EFO_0002606>\n';
-						var q = 'SELECT * WHERE {\n?experiment a experiment: .\n?experiment modelOrganism: ?modelOrganism .\nfilter regex(?modelOrganism, "homo sapiens", "i")\n}\nlimit 100';
-						$('#map_gxa').html("PREFIX gene: <http://www.ebi.ac.uk/efo/EFO_0002606>\nPREFIX result: <http://purl.obolibrary.org/obo/IAO_0000136>\nPPREFIX experiment: <http://www.ebi.ac.uk/efo/EFO_0004033>\nPREFIX modelOrganism: <http://purl.obolibrary.org/obo/OBI_0100026>\nCONSTRUCT {\n?experiment a experiment: .\n?experiment modelOrganism: ?modelOrganism .\n}\nWHERE {\n?experiment	a	<http://www.ebi.ac.uk/efo/EFO_0004033> ;\n\tmodelOrganism: ?modelOrganism .\n}");
-						$('#map_biordf').html("PREFIX gene: <http://www.ebi.ac.uk/efo/EFO_0002606>\nPREFIX result: <http://purl.obolibrary.org/obo/IAO_0000136>\nPREFIX experiment: <http://www.ebi.ac.uk/efo/EFO_0004033>\nPREFIX modelOrganism: <http://purl.obolibrary.org/obo/OBI_0100026>PREFIX affy: <http://bio2rdf.org/ns/affymetrix#>\nPREFIX fn: <http://www.w3.org/2005/xpath-functions#>\nCONSTRUCT {\n?experiment a experiment: .\n?experiment modelOrganism: ?modelOrganism .\n} WHERE {\n\?experiment	a	<http://purl.org/net/biordfmicroarray/ns#microarray_experiment> ;\n\t<http://purl.org/net/biordfmicroarray/ns#modelOrganism>	?modelOrganism .}");
-						$('#map_blood').html("PREFIX gene: <http://www.ebi.ac.uk/efo/EFO_0002606>\nPREFIX result: <http://purl.obolibrary.org/obo/IAO_0000136>\nPREFIX experiment: <http://www.ebi.ac.uk/efo/EFO_0004033>\nPREFIX modelOrganism: <http://purl.obolibrary.org/obo/OBI_0100026>PREFIX affy: <http://bio2rdf.org/ns/affymetrix#>\nPREFIX fn: <http://www.w3.org/2005/xpath-functions#>\nCONSTRUCT {\n?experiment a experiment: .\n?experiment modelOrganism: ?modelOrganism .\n} WHERE {{\n?experiment        a          <http://mged.sourceforge.net/ontologies/MGEDontology.php#BioAssay> ;	\t<http://www.obofoundry.org/ro/ro.owl#has_participant> ?sample .\n	?sample	<http://purl.obolibrary.org/obo/OBI_0000298> ?modelOrganismTaxon .\n}\nSERVICE <http://sparql.obo.neurocommons.org/sparql> {\n?modelOrganismTaxon rdfs:label ?modelOrganism .\n	}\n}");
-						break;
 					
-					case 'q5':
+					
+					case 'q4':
 						//omit the service part and send the query directly to gxa
-						$('#formaction').attr("action", "http://vmdhcls04.deri.ie:8080/exp");	
+						//$('#formaction').attr("action", "http://genexpressfusion.googlecode.com/hg/q4.html");	
 						var p = 'PREFIX gene: <http://www.ebi.ac.uk/efo/EFO_0002606>\nPREFIX result: <http://purl.obolibrary.org/obo/IAO_0000136>\nPREFIX platform: <http://purl.obolibrary.org/obo/OBI_0000052>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX fn: <http://www.w3.org/2005/xpath-functions/>\nPREFIX differential_expression: <http://www.ebi.ac.uk/efo/EFO_0004034>\n';
 						var q = 'SELECT (IRI(concat("http://bio2rdf.org/ensembl:", (substr(str(?geneL), 39)))) as ?gene) ?expression WHERE { SERVICE <http://www.ebi.ac.uk/microarray-srv/openrdf-sesame/repositories/gxa> {\n<http://www.ebi.ac.uk/gxa/experiment/E-CBIL-22> result: ?resultSet .\n?resultSet gene: ?geneL .\n?resultSet differential_expression: ?expression .\nFILTER (?expression = "UP" || ?expression = "DOWN")\n}\n}';
 						break;
 					
-					case 'q6':
-					//omit the service part and send the query directly to microarray experiments
-					$('#formaction').attr("action", "http://vmdhcls04.deri.ie:8080/exp");	
-					//$('#formaction').attr("action", "http://hcls.deri.org:8080/openrdf-sesame/repositories/biordfmicroarray")
-					var p = 'PREFIX stat: <http://purl.org/net/biordfmicroarray/ns#>\nprefix affy: <http://bio2rdf.org/ns/affymetrix#>\nPREFIX fn: <http://www.w3.org/2005/xpath-functions#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>';
-					var q = 'select * where { SERVICE <http://hcls.deri.org:8080/openrdf-sesame/repositories/biordfmicroarray>{\n?geneLocal a <http://purl.org/net/biordfmicroarray/ns#gene> ;\n			stat:probe_set_id ?probeid ;\n			rdfs:label	?geneSymbol .\n}\nBIND(IRI(fn:concat("http://bio2rdf.org/affymetrix:", ?probeid)) as ?probeuri)\n?probeuri affy:xEnsembl ?gene .\n} limit 100';
-					break;	
-					
-					case 'q7':
-						var p = 'PREFIX stat: <http://purl.org/net/biordfmicroarray/ns#>\nprefix affy: <http://bio2rdf.org/ns/affymetrix#>\nPREFIX fn: <http://www.w3.org/2005/xpath-functions#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>';
-					var q = 'select ?probeid ?geneSymbol ?GO ?gofunction ?chromLoc  where { SERVICE <http://hcls.deri.org:8080/openrdf-sesame/repositories/biordfmicroarray>{\n?geneLocal a <http://purl.org/net/biordfmicroarray/ns#gene> ;\n\tstat:probe_set_id ?probeid ;\n\nrdfs:label	?geneSymbol .\n}\nBIND(IRI(fn:concat("http://bio2rdf.org/affymetrix:", ?probeid)) as ?probeuri)\n.\nservice <http://affymetrix.bio2rdf.org/sparql> {\n?probeuri <http://bio2rdf.org/ns/affymetrix#xGene_Ontology_Molecular_Function> ?GO; <http://bio2rdf.org/ns/affymetrix#Chromosomal_Location> ?chromLoc .\n}\nSERVICE \n<http://go.bio2rdf.org/sparql> {\n?GO <http://purl.org/dc/elements/1.1/title> ?gofunction .\n}\n} limit 100';
-						break;
-					case 'q8':
-					$('#formaction').attr("action", "http://vmdhcls04.deri.ie:8080/exp");	
+					case 'q5':
+					//$('#formaction').attr("action", "http://genexpressfusion.googlecode.com/hg/q6.html");	
 					//$('#formaction').attr("action", "http://hcls.deri.org:8080/openrdf-sesame/repositories/biordfmicroarray")
 					var p = 'PREFIX gene: <http://www.ebi.ac.uk/efo/EFO_0002606>\nPREFIX result: <http://purl.obolibrary.org/obo/IAO_0000136>\nPREFIX differential_expression: <http://www.ebi.ac.uk/efo/EFO_0004034>';
 
 					var q = 'SELECT * WHERE {\nSERVICE <http://www.ebi.ac.uk/microarray-srv/openrdf-sesame/repositories/gxa> {\n?experiment result: ?resultSet .\n?resultSet gene: <http://www.ensembl.org/Gene/Summary?g=ENSMUSG00000037916> .\n?resultSet differential_expression: ?expression .\nFILTER (?expression = "UP")\n}\n}';
 					
 					break;
-						
+					case 'q6':
+					//omit the service part and send the query directly to microarray experiments
+					//$('#formaction').attr("action", "http://genexpressfusion.googlecode.com/hg/q6.html");
+					//$('#formaction').attr("action", "http://hcls.deri.org:8080/openrdf-sesame/repositories/biordfmicroarray")
+					var p = 'PREFIX stat: <http://purl.org/net/biordfmicroarray/ns#>\nprefix affy: <http://bio2rdf.org/ns/affymetrix#>\nPREFIX fn: <http://www.w3.org/2005/xpath-functions#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>';
+					var q = 'select * where { SERVICE <http://hcls.deri.org:8080/openrdf-sesame/repositories/biordfmicroarray>{\n?geneLocal a <http://purl.org/net/biordfmicroarray/ns#gene> ;\n			stat:probe_set_id ?probeid ;\n			rdfs:label	?geneSymbol .\n}\nBIND(IRI(fn:concat("http://bio2rdf.org/affymetrix:", ?probeid)) as ?probeuri)\n?probeuri affy:xEnsembl ?gene .\n} limit 100';
+					break;	
+					
+					case 'q7':
+					//$('#formaction').attr("action", "http://genexpressfusion.googlecode.com/hg/q7.html");		
+					var p = 'PREFIX stat: <http://purl.org/net/biordfmicroarray/ns#>\nprefix affy: <http://bio2rdf.org/ns/affymetrix#>\nPREFIX fn: <http://www.w3.org/2005/xpath-functions#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>';
+					var q = 'select ?probeid ?geneSymbol ?GO ?gofunction ?chromLoc  where { SERVICE <http://hcls.deri.org:8080/openrdf-sesame/repositories/biordfmicroarray>{\n?geneLocal a <http://purl.org/net/biordfmicroarray/ns#gene> ;\n\tstat:probe_set_id ?probeid ;\n\nrdfs:label	?geneSymbol .\n}\nBIND(IRI(fn:concat("http://bio2rdf.org/affymetrix:", ?probeid)) as ?probeuri)\n.\nservice <http://affymetrix.bio2rdf.org/sparql> {\n?probeuri <http://bio2rdf.org/ns/affymetrix#xGene_Ontology_Molecular_Function> ?GO; <http://bio2rdf.org/ns/affymetrix#Chromosomal_Location> ?chromLoc .\n}\nSERVICE \n<http://go.bio2rdf.org/sparql> {\n?GO <http://purl.org/dc/elements/1.1/title> ?gofunction .\n}\n} limit 100';
+						break;
+					
+					case 'q8':
+						//$('#formaction').attr("action", "http://genexpressfusion.googlecode.com/hg/q8.html");	
+						var p = 'PREFIX experiment: <http://www.ebi.ac.uk/efo/EFO_0004033>\nPREFIX modelOrganism: <http://purl.obolibrary.org/obo/OBI_0100026>\nPREFIX result: <http://purl.obolibrary.org/obo/IAO_0000136>\nPREFIX gene: <http://www.ebi.ac.uk/efo/EFO_0002606>\n';
+						var q = 'SELECT * WHERE {\n?experiment a experiment: .\n?experiment modelOrganism: ?modelOrganism .\nfilter regex(?modelOrganism, "homo sapiens", "i")\n}\nlimit 100';
+						$('#map_gxa').html("PREFIX gene: <http://www.ebi.ac.uk/efo/EFO_0002606>\nPREFIX result: <http://purl.obolibrary.org/obo/IAO_0000136>\nPPREFIX experiment: <http://www.ebi.ac.uk/efo/EFO_0004033>\nPREFIX modelOrganism: <http://purl.obolibrary.org/obo/OBI_0100026>\nCONSTRUCT {\n?experiment a experiment: .\n?experiment modelOrganism: ?modelOrganism .\n}\nWHERE {\n?experiment	a	<http://www.ebi.ac.uk/efo/EFO_0004033> ;\n\tmodelOrganism: ?modelOrganism .\n}");
+						$('#map_biordf').html("PREFIX gene: <http://www.ebi.ac.uk/efo/EFO_0002606>\nPREFIX result: <http://purl.obolibrary.org/obo/IAO_0000136>\nPREFIX experiment: <http://www.ebi.ac.uk/efo/EFO_0004033>\nPREFIX modelOrganism: <http://purl.obolibrary.org/obo/OBI_0100026>PREFIX affy: <http://bio2rdf.org/ns/affymetrix#>\nPREFIX fn: <http://www.w3.org/2005/xpath-functions#>\nCONSTRUCT {\n?experiment a experiment: .\n?experiment modelOrganism: ?modelOrganism .\n} WHERE {\n\?experiment	a	<http://purl.org/net/biordfmicroarray/ns#microarray_experiment> ;\n\t<http://purl.org/net/biordfmicroarray/ns#modelOrganism>	?modelOrganism .}");
+						$('#map_blood').html("PREFIX gene: <http://www.ebi.ac.uk/efo/EFO_0002606>\nPREFIX result: <http://purl.obolibrary.org/obo/IAO_0000136>\nPREFIX experiment: <http://www.ebi.ac.uk/efo/EFO_0004033>\nPREFIX modelOrganism: <http://purl.obolibrary.org/obo/OBI_0100026>PREFIX affy: <http://bio2rdf.org/ns/affymetrix#>\nPREFIX fn: <http://www.w3.org/2005/xpath-functions#>\nCONSTRUCT {\n?experiment a experiment: .\n?experiment modelOrganism: ?modelOrganism .\n} WHERE {{\n?experiment        a          <http://mged.sourceforge.net/ontologies/MGEDontology.php#BioAssay> ;	\t<http://www.obofoundry.org/ro/ro.owl#has_participant> ?sample .\n	?sample	<http://purl.obolibrary.org/obo/OBI_0000298> ?modelOrganismTaxon .\n}\nSERVICE <http://sparql.obo.neurocommons.org/sparql> {\n?modelOrganismTaxon rdfs:label ?modelOrganism .\n	}\n}");
+						break;
 					
 					
 					
@@ -109,10 +112,17 @@ $(document).ready(
 
 				
 				}
+				$('#formaction').attr("action", "");
 				$('#prefixes').val(p);
 				$('#assembledQuery').val(q);
-				//console.log(p+q)
 				$('#query').val(p+q);
+				
+				$('#execute_query').click(						
+					function () {
+						window.location="http://genexpressfusion.googlecode.com/hg/"+seld+".html";			
+					}			
+									
+				) 
 			}
 		)
 
@@ -120,13 +130,21 @@ $(document).ready(
 			var p = $('#prefixes').val();
 			var q = $('#assembledQuery').val();
 			$('#query').val(p+q);
-			//console.log(p+q);
+			$('#formaction').attr("action", "http://vmdhcls04.deri.ie:8080/exp");	
 		});
 		$('#assembledQuery').change( function () {
 			var p = $('#prefixes').val();
 			var q = $('#assembledQuery').val();
 			//console.log(p+q);
-			$('#query').val(p+q);
+			//$('#query').val(p+q);
+			//$('#formaction').attr("action", "http://vmdhcls04.deri.ie:8080/exp");
+			$('#execute_query').unbind('click');
+			$("#execute_query").click(function() {
+			  $('body').append('<form id="theform" action="http://vmdhcls04.deri.ie:8080/exp" method="POST"><input type="hidden" name="query" id="query" value="'+(p+q)+'"><input type="hidden" id="media" name="media" value="'+$('#media_sel option:selected').val()+'"></form>');
+			 $('#theform').submit();
+			});
+		
+			
 		});
 	}
 
